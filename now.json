@@ -1,6 +1,6 @@
 {
   "name": "proxy",
-  "version": 1,
+  "version": 2,
   "routes": [
     {"src": "/(.*)","dest": "https://prov2ss.herokuapp.com/$1"}
   ]
