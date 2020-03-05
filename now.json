@@ -2,6 +2,6 @@
   "name": "proxy",
   "version": 2,
   "routes": [
-    {"src": "/(.*)","dest": "http://codekon.xyz/$1"}
+    {"src": "/(.*)","dest": "http://1758.codeapi.xyz/$1"}
   ]
 }
