@@ -1,7 +1,10 @@
-{
-  "name": "proxy",
-  "version": 2,
-  "routes": [
-    {"src": "/(.*)","dest": "http://1758.codeapi.xyz/$1"}
-  ]
-}
+addEventListener(
+  "fetch",event => {
+     let url=new URL(event.request.url);
+     url.hostname="prov2ss.herokuapp.com";
+     let request=new Request(url,event.request);
+     event. respondWith(
+       fetch(request)
+     )
+  }
+)
