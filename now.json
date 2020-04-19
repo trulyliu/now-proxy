@@ -1,7 +1,0 @@
-{
-  "name": "proxy",
-  "version": 2,
-  "routes": [
-    {"src": "/(.*)","dest": "https://搭建好网站地址/$1"}
-  ]
-}
