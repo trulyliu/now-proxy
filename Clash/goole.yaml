@@ -18,6 +18,7 @@ payload:
   - DOMAIN-SUFFIX,appspot.com
   - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,googleusercontent.com
+  - DOMAIN-SUFFIX,google-analytics.com
   #facebook
   - DOMAIN-SUFFIX,facebook.com
   - DOMAIN-SUFFIX,facebook.net
@@ -43,7 +44,4 @@ payload:
   - DOMAIN-SUFFIX,tumblr.com
   - DOMAIN-SUFFIX,ip.sb
   - DOMAIN-SUFFIX,amplitude.com
-  - IP-CIDR,172.217.160.0/24
-  - IP-CIDR,172.217.27.0/24
-  - IP-CIDR,172.217.24.0/24
   - IP-CIDR,64.233.187.188/32
