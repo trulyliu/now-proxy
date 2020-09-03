@@ -19,6 +19,7 @@ payload:
   - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,googleusercontent.com
   - DOMAIN-SUFFIX,google-analytics.com
+  - DOMAIN-SUFFIX,googlesyndication.com
   #facebook
   - DOMAIN-SUFFIX,facebook.com
   - DOMAIN-SUFFIX,facebook.net
