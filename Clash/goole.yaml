@@ -45,3 +45,4 @@ payload:
   - DOMAIN-SUFFIX,amplitude.com
   - IP-CIDR,172.217.160.0/24
   - IP-CIDR,172.217.24.0/24
+  - IP-CIDR,64.233.187.188/32
