@@ -40,6 +40,7 @@ payload:
   - DOMAIN-SUFFIX,dmhy.org
   
   - DOMAIN-SUFFIX,staroid.com
+  - DOMAIN-SUFFIX,tumblr.com
   - DOMAIN-SUFFIX,ip.sb
   - DOMAIN-SUFFIX,amplitude.com
   - IP-CIDR,172.217.160.0/24
