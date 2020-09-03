@@ -1,0 +1,44 @@
+payload:
+  # > youtube
+  - DOMAIN-SUFFIX,google.ru
+  - DOMAIN-SUFFIX,google.com
+  - DOMAIN-SUFFIX,google.com.hk
+  - DOMAIN-SUFFIX,googleapis.com
+  - DOMAIN-SUFFIX,ggpht.com
+  - DOMAIN-SUFFIX,ytimg.com
+  - DOMAIN-SUFFIX,youtube.com
+  - DOMAIN-SUFFIX,googlevideo.com
+  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,goo.gl
+  - DOMAIN-SUFFIX,gvt0.com
+  - DOMAIN-SUFFIX,gvt2.com
+  - DOMAIN-SUFFIX,gvt1.com
+  - DOMAIN-SUFFIX,gvt3.com
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+  - DOMAIN-SUFFIX,appspot.com
+  - DOMAIN-SUFFIX,gstatic.com
+  #facebook
+  - DOMAIN-SUFFIX,facebook.com
+  - DOMAIN-SUFFIX,facebook.net
+  - DOMAIN-SUFFIX,fb.me
+  - DOMAIN-SUFFIX,fb.com
+  - DOMAIN-SUFFIX,fbpigeon.com
+  - DOMAIN-SUFFIX,fbcdn.net
+  # > Twitter
+  - DOMAIN-SUFFIX,t.co
+  - DOMAIN-SUFFIX,twimg.com
+  - DOMAIN-SUFFIX,twitter.com
+  #github
+  - DOMAIN-SUFFIX,githubusercontent.com
+
+  - DOMAIN-SUFFIX,s3.amazonaws.com
+  - DOMAIN-SUFFIX,firebaseio.com
+  #创意工坊
+  - DOMAIN-SUFFIX,steamcommunity.com
+  #动漫花园
+  - DOMAIN-SUFFIX,dmhy.org
+  
+  - DOMAIN-SUFFIX,staroid.com
+  - DOMAIN-SUFFIX,ip.sb
+  - DOMAIN-SUFFIX,amplitude.com
+  - IP-CIDR,172.217.160.0/24

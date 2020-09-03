@@ -1,0 +1,31 @@
+proxies:
+- name: "ibm-ssv2"
+  type: ss
+  server: gost.cnm.workers.dev
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: "peng"
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket # no QUIC now
+    tls: true # wss
+    #skip-cert-verify: false
+    host: gost.cnm.workers.dev
+    path: "/peng"
+    mux: true
+      # headers:
+      #   custom: value
+- name: "ibm-dmxz2"
+  type: ss
+  server: dmxz2.cnm.workers.dev
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: "peng"
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket # no QUIC now
+    tls: true # wss
+    skip-cert-verify: false
+    host: dmxz2.cnm.workers.dev
+    path: "/peng"
+    mux: true

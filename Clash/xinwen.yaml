@@ -1,0 +1,28 @@
+payload:
+  # (DNS Cache Pollution)
+  # > gwf
+  - DOMAIN-SUFFIX,bit.ly
+  - DOMAIN-SUFFIX,bbc.com
+  - DOMAIN-SUFFIX,bbci.co.uk
+  - DOMAIN-SUFFIX,bbc.co.uk
+  - DOMAIN-SUFFIX,crwdcntrl.net
+  - DOMAIN-SUFFIX,voachinese.com
+  - DOMAIN-SUFFIX,voanews.com
+  - DOMAIN-SUFFIX,epochtimes.com
+  - DOMAIN-SUFFIX,rfi.fr
+  - DOMAIN-SUFFIX,wsj.com
+  - DOMAIN-SUFFIX,wsj.net
+  - DOMAIN-SUFFIX,bannedbook.org
+  - DOMAIN-SUFFIX,hk01.com
+  - DOMAIN-SUFFIX,reuters.com
+  - DOMAIN-SUFFIX,reutersmedia.net
+  - DOMAIN-SUFFIX,yahoo.com
+  - DOMAIN-SUFFIX,udnbkk.com
+  - DOMAIN-SUFFIX,dw.com
+  - DOMAIN-SUFFIX,aboluowang.com
+  - DOMAIN-SUFFIX,youlucky.com
+  - DOMAIN-SUFFIX,pinterest.com
+  - DOMAIN-SUFFIX,wikipedia.org
+  - DOMAIN-SUFFIX,whoer.net
+    # > aws
+  - DOMAIN-SUFFIX,amazonaws.com
