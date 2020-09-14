@@ -1,7 +1,0 @@
-proxies:
-
-- { name: "kintohub", type: vmess, server: v2tlsdocker-5f2a4.asia1.kinto.io, port: 443, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 4, cipher: auto, udp: true, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws }
-- { name: "yezi", type: vmess, server: yanzi.cnm.workers.dev, port: 443, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 4, cipher: auto, udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws }
-- { name: "eu德国", type: vmess, server: eu.armn1.ml, port: 443, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 4, cipher: auto, udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws }
-- { name: "heroku", type: vmess, server: prov2ss.cnm.workers.dev, port: 443, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 4, cipher: auto, udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: / }
-- { name: "gostssv2", type: vmess, server: lifei51.us-south.cf.appdomain.cloud, port: 443, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 4, cipher: auto, udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws }
