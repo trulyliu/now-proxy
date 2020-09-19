@@ -5,14 +5,14 @@
         "protocol": "vmess",
         "settings": {
             "clients": [{
-                "id": "8e82a9a5-b894-4b4d-bf2e-dbf0807572aa",
+                "id": "aae6bb78-d50b-4f0e-888e-74896a2a56a3",
                 "alterId": 4
             }]
         },
         "streamSettings": {
             "network": "ws",
             "wsSettings": {
-                "path": "/ws"
+                "path": "/ws-vmess"
             }
         }
     }],
