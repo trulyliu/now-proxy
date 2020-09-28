@@ -1,6 +1,7 @@
 #!/bin/sh
 read -p "请输入应用程序名称:" appname
 read -p "请设置你的容器内存大小(默认256):" ramsize
+read -p "请输入shadowsocks密码:" mypass
 if [ -z "$ramsize" ];then
 	ramsize=256
 fi
@@ -23,21 +24,22 @@ echo '  command: '/app/htdocs/entrypoint.sh'' >>manifest.yml
 echo '  name: '$appname''>>manifest.yml
 echo '  random-route: true'>>manifest.yml
 echo '  memory: '$ramsize'M'>>manifest.yml
+echo $mypass -n > mypass
 ibmcloud target --cf
 ibmcloud cf push
 ibmyuming=$(ibmcloud app show $appname | grep routes |awk '{print $2}')
     VMESSCODE=$(base64 -w 0 << EOF
     {
       "v": "2",
-      "ps": "v2ws IBM",
+      "ps": "ibm-cf",
       "add": "$ibmyuming",
       "port": "443",
-      "id": "aae6bb78-d50b-4f0e-888e-74896a2a56a3",
+      "id": "535510a7-8b81-4c8d-aa59-8c890acc037c",
       "aid": "4",
       "net": "ws",
       "type": "none",
       "host": "",
-      "path": "/ws-vmess",
+      "path": "/v2vmess",
       "tls": "tls"
     }
 EOF
