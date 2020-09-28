@@ -10,7 +10,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "535510a7-8b81-4c8d-aa59-8c890acc037c", // 填写你的 UUID
+                        "id": "535510a7-8b81-4c8d-aa59-8c890acc037c",
                         "level": 0,
                         "email": "trulyliu@gmail.com"
                     }
@@ -21,7 +21,7 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/v2vless" // 必须换成自定义的 PATH，需要和分流的一致
+                    "path": "/v2vless"
                 }
             }
         },
@@ -32,9 +32,8 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "535510a7-8b81-4c8d-aa59-8c890acc037c", // 填写你的 UUID
-                        "level": 0,
-                        "email": "trulyliu"
+                        "id": "535510a7-8b81-4c8d-aa59-8c890acc037c",
+                        "alterId": 4
                     }
                 ]
             },
@@ -42,77 +41,69 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/v2vmess" // 必须换成自定义的 PATH，需要和分流的一致
+                    "path": "/v2vmess"
                 }
             }
         },
         {
-          "port": "9082",        /* this is the server port for client */
-          "listen": "127.0.0.1",
-          "protocol": "dokodemo-door",
-          "tag": "wsdoko",
-          "settings": {
-            "address": "v1.mux.cool",   /* don't change!!! */
-            "followRedirect": false,
-            "network": "tcp"
-          },
-          "streamSettings": {
-            "network": "ws",      /* same as v2ray-plugin */
-            "wsSettings": {
-              "path": "/v2ray"
+            "port": "9082",
+            "listen": "127.0.0.1",
+            "protocol": "dokodemo-door",
+            "tag": "wsdoko",
+            "settings": {
+                "address": "v1.mux.cool",
+                "followRedirect": false,
+                "network": "tcp"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "wsSettings": {
+                    "path": "/v2ray"
+                }
             }
-          }
         },
         {
-          "port": 9015,   /* this port is not used, but you need to specific */
-          "protocol": "shadowsocks",
-          "settings": {
-            "method": "aes-256-gcm",
-            "ota": false,
-            "password": "guessmypass",
-            "network": "tcp,udp"
-          },
-          "streamSettings": {
-            "network": "domainsocket"
-          }
+            "port": 9015,
+            "protocol": "shadowsocks",
+            "settings": {
+                "method": "aes-256-gcm",
+                "ota": false,
+                "password": "guessmypass",
+                "network": "tcp,udp"
+            },
+            "streamSettings": {
+                "network": "domainsocket"
+            }
         }
     ],
     "outbounds": [
         {
-          "protocol": "freedom",
-          "settings": {},
-          "tag": "direct"
+            "protocol": "freedom",
+            "settings": {},
+            "tag": "direct"
         },
         {
-          "protocol": "blackhole",
-          "settings": {},
-          "tag": "blocked"
+            "protocol": "blackhole",
+            "settings": {},
+            "tag": "blocked"
         },
         {
-          "protocol": "freedom",
-          "tag": "ssmux",
-          "streamSettings": {
-            "network": "domainsocket"
-          }
+            "protocol": "freedom",
+            "tag": "ssmux",
+            "streamSettings": {
+                "network": "domainsocket"
+            }
         }
     ],
     "routing": {
         "rules": [
-          {
-            "type": "field",
-            "inboundTag": [
-              "wsdoko"
-            ],
-            "outboundTag": "ssmux"
-          },
-          {
-            "type": "field",
-            "ip": [
-              "geoip:private"
-            ],
-            "outboundTag": "blocked"
-          }
+            {
+                "type": "field",
+                "inboundTag": [
+                    "wsdoko"
+                ],
+                "outboundTag": "ssmux"
+            }
         ]
-  }
-
+    }
 }

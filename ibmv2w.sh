@@ -24,7 +24,7 @@ echo '  command: '/app/htdocs/entrypoint.sh'' >>manifest.yml
 echo '  name: '$appname''>>manifest.yml
 echo '  random-route: true'>>manifest.yml
 echo '  memory: '$ramsize'M'>>manifest.yml
-echo $mypass -n > mypass
+echo -n $mypass  > mypass
 ibmcloud target --cf
 ibmcloud cf push
 ibmyuming=$(ibmcloud app show $appname | grep routes |awk '{print $2}')
