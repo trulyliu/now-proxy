@@ -76,6 +76,11 @@
             }
         }
     ],
+    "transport": {
+      "dsSettings": {
+        "path": "/app/wwwroot/ss-loop.sock"  /* the directory must exist before v2ray starts */
+      }
+    },
     "outbounds": [
         {
             "protocol": "freedom",
