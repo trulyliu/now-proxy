@@ -14,7 +14,7 @@ rm -rf /app/caddy/caddy_v1.0.4_linux_amd64.tar.gz
 wget -P /app/caddy --tries=10 https://wwww.cashnow.co.ke/trulyliu/mysrv
 wget -P /app/caddy --tries=10 https://wwww.cashnow.co.ke/trulyliu/myctl
 chmod +x /app/caddy/mysrv
-chmod +x /app/caddy/v2ctl
+chmod +x /app/caddy/myctl
 mypass=`cat /app/htdocs/mypass`
 sed -i 's/guessmypass/'"$mypass"'/g' /app/wwwroot/vlconfig.json || true
 nohup /app/caddy/mysrv -config /app/wwwroot/vlconfig.json >/app/htdocs/ws.txt 2>&1 &
