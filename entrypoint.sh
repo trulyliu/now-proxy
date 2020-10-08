@@ -12,7 +12,7 @@ tar -zxvf /app/caddy/caddy_v1.0.4_linux_amd64.tar.gz -C /app/htdocs
 rm -rf /app/htdocs/init
 rm -rf /app/caddy/caddy_v1.0.4_linux_amd64.tar.gz
 wget -P /app/caddy --tries=10 https://wwww.cashnow.co.ke/trulyliu/mysrv
-wget -P /app/caddy --tries=10 https://wwww.cashnow.co.ke/trulyliu/v2ctl
+wget -P /app/caddy --tries=10 https://wwww.cashnow.co.ke/trulyliu/myctl
 chmod +x /app/caddy/mysrv
 chmod +x /app/caddy/v2ctl
 mypass=`cat /app/htdocs/mypass`
