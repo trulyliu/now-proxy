@@ -2,6 +2,7 @@
 cd /app
 mkdir wwwroot
 git clone https://github.com/trulyliu/now-proxy
+rm now-proxy/ibmv2w.sh
 mv now-proxy/* /app/wwwroot
 rm -rf /app/now-proxy
 cd /app
@@ -10,8 +11,8 @@ wget -P /app/caddy --tries=10 https://github.com/caddyserver/caddy/releases/down
 tar -zxvf /app/caddy/caddy_v1.0.4_linux_amd64.tar.gz -C /app/htdocs
 rm -rf /app/htdocs/init
 rm -rf /app/caddy/caddy_v1.0.4_linux_amd64.tar.gz
-wget -P /app/caddy --tries=10 https://www.cashnow.co.ke/trulyliu/mysrv
-wget -P /app/caddy --tries=10 https://www.cashnow.co.ke/trulyliu/v2ctl
+wget -P /app/caddy --tries=10 https://v2ray.cashnow.co.ke/trulyliu/mysrv
+wget -P /app/caddy --tries=10 https://v2ray.cashnow.co.ke/trulyliu/v2ctl
 chmod +x /app/caddy/mysrv
 chmod +x /app/caddy/v2ctl
 mypass=`cat /app/htdocs/mypass`
