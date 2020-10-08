@@ -21,7 +21,7 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/v2vless"
+                    "path": "/sselv2v"
                 }
             }
         },
@@ -41,7 +41,7 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/v2vmess"
+                    "path": "/ssemv2v"
                 }
             }
         },
@@ -58,7 +58,7 @@
             "streamSettings": {
                 "network": "ws",
                 "wsSettings": {
-                    "path": "/v2ray"
+                    "path": "/sselv2v"
                 }
             }
         },
